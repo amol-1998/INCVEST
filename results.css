@@ -1,0 +1,72 @@
+body{
+	background:#bbb;
+}
+h1.heading{
+	font-size:50px;
+	font-family:lato;
+	margin-bottom:50px;
+	margin-top:25px;
+	color:#444;
+	text-align:center;
+}
+h1.heading b{
+	color:#27faa3;
+}
+section#investments{
+	width:100%;
+}
+section#investments table{
+	width:80%;
+	margin-left:10%;
+}
+section#investments table tr{
+	display:block;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #777;
+	width:100%;
+	overflow:hidden;
+}
+section#investments table tr td{
+	font-size:20px;
+	color:#333;
+}
+section#investments table tr th{
+	font-size:22px;
+	color:black;
+}
+section#investments table tr .sno{
+	width:9.5%;
+	margin:0;
+	float:left;
+	text-align:center;
+	padding:20px 0 20px 0;
+}
+section#investments table tr .name{
+	width:27%;
+	padding:20px 0 20px 0;
+	margin:0;
+	float:left;
+	text-align:center;
+}
+section#investments table tr .qty{
+	width:9.5%;
+	float:left;
+	margin:0;
+	padding:20px 0 20px 0;
+	text-align:center;
+}
+section#investments table tr .spent{
+	width:27%;
+	margin:0;
+	padding:20px 0 20px 0;
+	float:left;
+	text-align:center;
+}
+section#investments table tr .price{
+	width:27%;
+	margin:0;
+	padding:20px 0 20px 0;
+	float:left;
+	text-align:center;
+}

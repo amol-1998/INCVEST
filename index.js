@@ -1,0 +1,29 @@
+function UpdateSize(){var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+if(width==360||width==375){var wrap = document.getElementById('wrapper');wrap.style.width = "260px";wrap.style.height = "500px";wrap.style.position = "absolute";wrap.style.top = "70px";wrap.style.left = "50px";var inputText = document.getElementById("textfield");
+inputText.style.fontSize = "large";inputText.style.marginBottom = "40px";inputText.style.marginTop = "20px";var inputPass = document.getElementById("pwdfield");inputPass.style.fontSize = "large";inputPass.style.marginBottom = "20%";var image = document.getElementById('LoginImg');image.style.width = "50%";image.style.marginLeft = "25%";var Login = document.getElementById('Login');Login.style.fontSize = "30px";var LoginButton = document.getElementById('loginButton');
+LoginButton.style.width = "40%";LoginButton.style.textAlign = "center";LoginButton.style.marginLeft = "30%";LoginButton.style.padding = "2%";LoginButton.style.fontSize = "small";}
+else if(width<768){	var wrap = document.getElementById('wrapper');wrap.style.width = "70%";wrap.style.height = "80%";wrap.style.position = "absolute";wrap.style.top = "10%";
+wrap.style.left = "15%";var inputText = document.getElementById("textfield");inputText.style.fontSize = "small";inputText.style.marginBottom = "auto";inputText.style.marginTop = "5%";
+var inputPass = document.getElementById("pwdfield");inputPass.style.fontSize = "small";inputPass.style.marginTop = "5%";inputPass.style.marginBottom = "5%";var image = document.getElementById('LoginImg');
+image.style.width = "30%";image.style.marginLeft = "35%";var Login = document.getElementById('Login');Login.style.fontSize = "large";var LoginButton = document.getElementById('loginButton');LoginButton.style.width = "40%";LoginButton.style.textAlign = "center";LoginButton.style.marginTop = "10%";
+LoginButton.style.marginLeft = "30%";LoginButton.style.marginBottom = "5%";LoginButton.style.padding = "2%";LoginButton.style.fontSize = "small";}else if(width==768)
+{var wrap = document.getElementById('wrapper');wrap.style.width = "60%";wrap.style.height = "85%";wrap.style.position = "absolute";wrap.style.top = "7.5%";wrap.style.left = "20%";
+var inputText = document.getElementById("textfield");inputText.style.fontSize = "large";inputText.style.marginBottom = "7.5%";inputText.style.marginTop = "2%";var inputPass = document.getElementById("pwdfield");inputPass.style.fontSize = "large";
+inputPass.style.marginBottom = "2%";var image = document.getElementById('LoginImg');image.style.width = "30%";image.style.marginLeft = "35%";var Login = document.getElementById('Login');
+Login.style.fontSize = "35px";Login.style.marginBottom = "0";var LoginButton = document.getElementById('loginButton');LoginButton.style.width = "40%";LoginButton.style.textAlign = "center";
+LoginButton.style.marginLeft = "30%";LoginButton.style.padding = "2%";LoginButton.style.fontSize = "medium";}else if(width<1100&&width>768){var wrap = document.getElementById('wrapper');
+wrap.style.width = "50%";wrap.style.height = "85%";wrap.style.position = "absolute";wrap.style.top = "7.5%";wrap.style.left = "25%";var inputText = document.getElementById("textfield");
+inputText.style.fontSize = "large";inputText.style.marginBottom = "2.5%";var inputPass = document.getElementById("pwdfield");inputPass.style.fontSize = "large";
+inputPass.style.marginBottom = "2.5%";var image = document.getElementById('LoginImg');image.style.width = "25%";image.style.marginLeft = "37.5%";var Login = document.getElementById('Login');
+Login.style.fontSize = "40px";Login.style.marginBottom = "0";var LoginButton = document.getElementById('loginButton');LoginButton.style.width = "20%";LoginButton.style.textAlign = "center";
+LoginButton.style.marginLeft = "40%";LoginButton.style.padding = "2%";LoginButton.style.fontSize = "medium";}else if(width==1100){var wrap = document.getElementById('wrapper');
+wrap.style.width = "50%";wrap.style.height = "85%";wrap.style.position = "absolute";wrap.style.top = "7.5%";wrap.style.left = "25%";var inputText = document.getElementById("textfield");
+inputText.style.fontSize = "large";inputText.style.marginBottom = "2%";var inputPass = document.getElementById("pwdfield");inputPass.style.fontSize = "large";
+inputPass.style.marginBottom = "1%";var image = document.getElementById('LoginImg');image.style.width = "25%";image.style.marginLeft = "37.5%";var Login = document.getElementById('Login');
+Login.style.fontSize = "40px";Login.style.marginBottom = "0";var LoginButton = document.getElementById('loginButton');LoginButton.style.width = "20%";LoginButton.style.textAlign = "center";
+LoginButton.style.marginLeft = "40%";LoginButton.style.padding = "2%";LoginButton.style.fontSize = "medium";}else if(width>1100){var wrap = document.getElementById('wrapper');
+wrap.style.width = "50%";wrap.style.height = "85%";wrap.style.position = "absolute";wrap.style.top = "2.5%";wrap.style.left = "25%";var inputText = document.getElementById("textfield");
+inputText.style.fontSize = "large";inputText.style.marginBottom = "2%";inputText.style.marginTop = "1%";var inputPass = document.getElementById("pwdfield");inputPass.style.fontSize = "large";
+var image = document.getElementById('LoginImg');image.style.width = "20%";image.style.marginLeft = "40%";var Login = document.getElementById('Login');Login.style.fontSize = "40px";
+Login.style.marginBottom = "0";var LoginButton = document.getElementById('loginButton');LoginButton.style.width = "20%";LoginButton.style.textAlign = "center";
+LoginButton.style.marginLeft = "40%";LoginButton.style.padding = "2%";LoginButton.style.fontSize = "medium";}};window.onload = UpdateSize; window.onresize = UpdateSize;    

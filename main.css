@@ -1,0 +1,402 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url('back3.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+.container{
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+	height:auto;
+}
+a, a:hover{
+	text-decoration:none;
+}
+/*Header*/
+header{
+	background-color:transparent;
+	opacity:1;
+	box-shadow:2px 2px 2px #222;
+	max-height:100px;
+	overflow:hidden;
+	margin-bottom:20px;
+	height:100px;
+}
+header .container #logo{
+	width:50%;
+	overflow:hidden;
+	float:left;
+}
+header .container #logo img{
+	max-width:56px;
+	margin-top:21px;
+	float:left;
+	margin-left:8px;
+	margin-right:8px;
+}
+header .container #logo h1{
+	font-size:60px;
+	color:#262626;
+	font-family:lato;
+	float:left;
+	margin-top:14px;
+}
+header .container #account{
+	width:30%;
+	float:right;
+	overflow:hidden;
+}
+header .container #account img{
+	margin-top:25px;
+	margin-left:10px;
+	width:50px;
+	background:green;
+	height:50px;
+	float:left;
+}
+header .container #account span{
+	display:inline-block;
+	font-size:18px;
+	color:white;
+	font-family:lato;
+	font-weight:bold;
+	margin-top:40px;
+	margin-left:25px;
+}
+header .container #account a{
+	color:#ccc;
+	display:block;
+	font-size:18px;
+	float:right;
+	margin-right:35px;
+	margin-top:42px;
+	text-align:center;
+	transition:all 0.5s;
+}
+header .container #account a:hover{
+	color:white;
+}
+/*Form Section*/
+section#results{
+	width:100%;
+}
+#sb{
+	display:block;
+	margin-left:15px;
+	padding:15px;
+	text-align:center;
+	color:black;
+	float:left;
+	width:10%;
+	background:#FF5733;
+	border-radius:100px;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+}
+#sb:hover{
+	background:#F71806;
+}
+#cfb{
+	display:block;
+	margin-left:15px;
+	padding:15px;
+	text-align:center;
+	width:10%;
+	background:#12D1E7;
+	float:left;
+	border-radius:100px;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+}
+#cfb:hover{
+	background:#3690FC;	
+}
+section#results .container span{
+	float:right;
+	margin-right:20px;
+	color:#888;
+	font-size:17px;
+}
+/*FORMS*/
+section#purch{
+	height:100%;
+}
+section#purch h1{
+	font-size:70px;
+	margin-bottom:100px;
+	color:#fff;
+	text-align:center;
+	font-family:lato;
+}
+section#purch div form{
+	width:100%;
+	height:inherit;
+}
+section#purch div form div.autocomplete{
+	width:25%;
+	height:inherit;
+	margin-left:6.25%;
+}
+section#purch div form div.autocomplete input{
+	border:0;
+	border-bottom:4px solid white;
+	font-size:25px;
+	color:white;
+	text-align:center;
+	display:block;
+	outline:0;
+	width:100%;
+	background:transparent;
+	padding:10px 5px 10px 15px;
+}
+section#purch div form div.autocomplete input:focus{
+	outline:2px #4D90FE;
+}
+section#purch div form #pricing{
+	width:25%;
+	border:0;
+	border-bottom:4px solid white;
+	background:transparent;
+	color:white;
+	text-align:center;
+	font-size:25px;
+	cursor:not-allowed;
+	padding:10px 5px 10px 15px;
+}
+section#purch div form input#bnum{
+	width:25%;
+	outline:none;
+	border:0;
+	color:white;
+	display:inline-block;
+	text-align:center;
+	border-bottom:4px solid white;
+	background:transparent;
+	font-size:25px;
+	padding:10px 5px 10px 15px;
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+.autocontainerclass{
+  overflow-Y:auto;
+  position:absolute;
+  max-height:190px;
+  right: 0;
+  left: 0;
+}
+.autocontainerclass::-webkit-scrollbar{
+	width:10px;
+}
+.autocontainerclass::-webkit-scrollbar-track{
+	-webkit-box-shadow:inset 15px 15px 15px;
+}
+.autocontainerclass::-webkit-scrollbar-thumb{
+	background:#eee;	
+	border-radius:10px;
+}
+.autocontainerclass div {
+  padding: 10px;
+  cursor: pointer;
+  font-family:Tahoma;
+  font-size:18px;
+  width:inherit;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocontainerclass div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: Black !important; 
+  color: #ffffff; 
+}
+section#purch div a, section#purch div a:focus{
+	display:inline-block;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	margin-top:0;
+	width:6.25%;
+	outline:0;
+}
+section#purch div a:hover{
+	animation: glow 2s linear infinite;
+	-webkit-animation: glow 2s linear infinite;
+	-moz-animation: glow 2s linear infinite;
+}
+@-webkit-keyframes glow{
+	0%{color:#21baf3;}
+	25%{color: #fff;}
+	50%{color: #262626;}
+	75%{color:#fb4e2e;}
+	100%{color:#fff;}
+}
+@-moz-keyframes glow{
+	0%{color:#fff;}
+	50%{color: #333;}
+	100%{color:#fff;}
+}
+@keyframes glow{
+	0%{color:#fff;}
+	50%{color: #333;}
+	100%{color:#fff;}
+}
+#buyb
+{
+	margin-top:100px;
+	border:0;
+	display:block;
+	box-sizing:border-box;
+	font-size:15px;
+	font-family:lato;
+	width:20%;
+	margin-left:40%;
+	padding:20px 10px 20px 10px;
+	background:#FFDF00;
+	color:black;
+	font-weight:bold;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition: all 0.5s;
+}
+#buyb:hover{
+	background:#FFFF00;
+	cursor:pointer;
+}
+/*SELL CURRENCY*/
+section#sell{
+	width:100%;
+	display:none;
+}
+section#sell h1{
+	font-size:70px;
+	margin-bottom:100px;
+	color:#fff;
+	text-align:center;
+	font-family:lato;
+}
+section#sell div form{
+	width:100%;
+}
+section#sell div form div.autocomplete{
+	width:25%;
+	margin-left:6.25%;
+}
+section#sell div form div.autocomplete input{
+	border:0;
+	border-bottom:4px solid white;
+	font-size:25px;
+	text-align:center;
+	color:white;
+	display:block;
+	outline:0;
+	width:100%;
+	background:transparent;
+	padding:10px 5px 10px 15px;
+}
+section#sell div form #sprice{
+	width:25%;
+	border:0;
+	border-bottom:4px solid white;
+	background:transparent;
+	font-size:25px;
+	text-align:center;
+	cursor:not-allowed;
+	padding:10px 5px 10px 15px;
+}
+section#sell div form input#snum{
+	width:25%;
+	border:0;
+	text-align:center;
+	outline:none;
+	color:white;
+	border-bottom:4px solid white;
+	background:transparent;
+	font-size:25px;
+	padding:10px 5px 10px 15px;
+}
+
+section#sell div a, section#sell div a:focus{
+	display:inline-block;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	margin-top:0;
+	width:6.25%;
+	outline:0;
+	
+}
+section#sell div a:hover{
+	animation: glow 2s linear infinite;
+	-webkit-animation: glow 2s linear infinite;
+	-moz-animation: glow 2s linear infinite;
+}
+@-webkit-keyframes glow{
+	0%{color:#21baf3;}
+	25%{color: #fff;}
+	50%{color: #262626;}
+	75%{color:#fb4e2e;}
+	100%{color:#fff;}
+}
+@-moz-keyframes glow{
+	0%{color:#fff;}
+	50%{color: #333;}
+	100%{color:#fff;}
+}
+@keyframes glow{
+	0%{color:#fff;}
+	50%{color: #333;}
+	100%{color:#fff;}
+}
+#sellb
+{
+	margin-top:100px;
+	border:0;
+	display:block;
+	box-sizing:border-box;
+	font-size:15px;
+	font-family:lato;
+	width:20%;
+	margin-left:40%;
+	padding:20px 10px 20px 10px;
+	background:#FFDF00;
+	color:black;
+	font-weight:bold;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition: all 0.5s;
+}
+#sellb:hover{
+	cursor:pointer;
+	background:#FFFF00;
+}
+.dead{
+	display:block;
+	width:10%;
+	margin-left:45%;
+	margin-bottom:25px;
+	margin-top:25px;
+	height:50px;
+	cursor:not-allowed;
+	background:#aaa;
+	color:#222;
+}
+
+/*For Autocomplete*/
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial; 
+}
+

@@ -1,0 +1,267 @@
+/*Global Styles*/
+*{
+	margin:0;
+	padding:0;
+}
+body,html{
+	font-family:Tahoma;
+	overflow:auto;
+}
+body::-webkit-scrollbar{
+	width:10px;
+}
+body::-webkit-scrollbar-track{
+	-webkit-box-shadow:inset 15px 15px 15px;
+}
+body::-webkit-scrollbar-thumb{
+	background:#eee;	
+	border-radius:10px;
+}
+.container{
+	width:100%;
+	height:100%;
+	margin:auto;
+	overflow:hidden;
+	clear:both;
+}
+ul{
+	list-style-type:none;
+}
+a, a:hover{
+	text-decoration:none;
+}
+/*MODALS*/
+
+#preview{
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	z-index:100;
+	position:fixed;
+	top:0;
+	display:none;
+	left:0;
+	cursor:pointer;
+}
+#preview img{
+	width:50%;
+	float:left;
+}
+#preview span{
+	font-size:60px;
+}
+#loginModal{
+	position:fixed;
+	display:block;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	overflow:auto;
+}
+#signupModal{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	overflow:auto;
+	width:100%;
+	height:100%;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.amodal{
+	width:30%;
+	height:auto;
+	margin-left:35%;
+	padding-bottom:1px;
+	margin-top:70px;
+	margin-bottom:50px;
+    background-color: white;
+	overflow:auto;
+	padding-top:5px;
+}
+/*Scrollbar for LoginModal and SignupModal*/
+
+/*The modal for Signup*/
+#signupModal .amodal{
+	margin-top:20px;
+	height:auto;
+	overflow:visible;
+	margin-bottom:15px;
+	padding-bottom:10px;
+	padding-top:5px;
+}
+.amodal h1{
+	text-align:center;
+	font-family:Calibri;
+	font-size:45px;
+	margin-top:20px;
+	color:#232323;
+	margin-bottom:40px;
+}
+#signupModal h1{
+	margin-bottom:25px;
+	font-size:45px;
+}
+
+#note{
+	color:black;
+	margin-bottom:40px;
+	font-size:13px;
+	text-align:center;
+}
+#note a{
+	text-decoration:none;
+	color:#21BAF3;
+}
+#note a:hover{
+	color:#206eea;
+}
+.amodal form input[type="text"],.amodal form input[type="password"], .amodal form input[type="email"]{
+	width:80%;
+	outline:none;
+	margin-left:10%;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:15px;
+	color:gray;
+	padding-left:5px;
+	min-height:45px;
+	background:#FBFBFB;
+	border-radius:5px;
+	border:1px solid gray;
+	box-shadow:1px 1px 5px 1px rgba(200,188,150,0.3);
+}
+.amodal form input[type="text"]:focus,.amodal form input[type="password"]:focus,.amodal form input[type="email"]:focus{
+	color:black;
+	background:#fff;
+	margin-top:19px;
+	margin-bottom:9px;
+	border:2px solid #222;
+	min-height:45px;
+}
+.amodal form label
+{
+	display:block;
+	width:80%;
+	color:white;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	background:#FF5733;
+	box-sizing:border-box;
+	padding-top:13px;
+	min-height:45px;
+	margin-left:10%;
+	font-size:15px;
+	border-radius:3px;
+	text-align:center;
+	box-shadow:3px 3px 3px gray;
+}
+.amodal form label:hover{
+	background:black;
+	cursor:pointer;
+}
+.amodal form input[type="submit"]
+{
+	border-radius:50px;
+	width:40%;
+	margin-left:30%;
+	min-height:40px;
+	outline:none;
+	border:2px solid black;
+	color:#111;
+	background:transparent;
+	cursor:pointer;
+	margin-top:30px;
+	margin-bottom:5px;
+}
+.amodal form input[type="submit"]:hover{
+	box-shadow:2px 2px 5px black;
+	color:white;
+	border:0;
+	background:black;
+}
+.amodal form input[type="submit"]:active{
+	box-shadow:none;
+}
+.amodal p{
+	font-size:15px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+.amodal p a{
+	color:#21BAF3;
+	text-decoration:none;
+}
+.amodal a:hover{
+	color:#206eea;
+}
+#tnc{
+	margin-top:40px;
+	text-align:center;
+	width:90%;
+	margin-bottom:30px;
+	margin-left:5%;
+	font-size:12px;
+}
+#lc{
+	margin-top:20px;
+	margin-left:5px;
+	background:#073C4E;
+	color:white;
+	box-sizing:border-box;
+	padding:10px;
+	padding-top:15px;
+	padding-left:18px;
+	z-index:100;
+	height:45px;
+	position:absolute;
+	font-size:14px;
+	clip-path:polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 80%, 0 70%, 0 65%, 5% 55%,5% 0);
+}
+/*MEDIA QUERIES MEDIA QUERIESMEDIA QUERIESMEDIA QUERIESMEDIA QUERIESMEDIA QUERIESMEDIA QUERIESMEDIA QUERIESMEDIA QUERIESMEDIA QUERIES*/
+
+@media(max-width:1021px)
+{
+	.amodal{
+	width:45%;
+	margin-left:32.5%;
+}
+.amodal h1{
+	font-size:40px;
+}
+#signupModal h1{
+	margin-bottom:10px;
+	}
+	.amodal p{
+		font-size:13px;	
+	}
+	#note{
+		font-size:11px;
+	}
+	.amodal form input[type="text"], .amodal form input[type="password"], .amodal form input[type="email"]{
+		width:94%;
+		padding-left:5px;
+		min-width:70px;
+		margin-left:2%;
+		min-height:40px;
+	}
+	.amodal form input[type="text"]:focus, .amodal form input[type="password"]:focus, .amodal form input[type="email"]:focus{
+		min-height:40px;
+	}
+	.amodal form input[type="submit"]{
+		width:45%;
+		margin-left:27.5%;
+	}
+}
+@media(max-width:660px){
+	.amodal{
+		width:92%;
+		margin-left:4%;
+	}
+#signupModal .close{
+	top:48px;
+	left:85%;
+}
+}
