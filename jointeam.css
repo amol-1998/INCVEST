@@ -1,0 +1,52 @@
+body{
+	background:#222;
+}
+#joinform{
+	margin-top:30px;
+}
+#joinform div{
+	width:60%;
+	margin-left:20%;
+	padding:30px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#joinform div h1{
+	font-size:48px;
+	text-align:center;
+	margin-bottom:25px;
+	color:#ddd;
+}
+#joinform div form{
+	overflow:hidden;
+	display:block;
+}
+#joinform div form input{
+	display:block;
+	width:100%;
+	padding:15px;
+	border-radius:5px;
+	background:#fafafa;
+	outline:none;
+	border:0;
+	font-size:18px;
+	margin-bottom:30px;
+}
+#joinform div form input[type='submit']{
+	width:30%;
+	margin-left:35%;
+	padding:20px;
+	cursor:pointer;
+	margin-top:50px;
+	border-radius:100px;
+	font-size:20px;
+	transition:all 0.25s;
+}
+#joinform div form input[type='submit']:hover{
+	background:#303D3E;
+	color:white;
+	box-shadow:0px 5px 3px black;
+}
+footer{
+	background:#0AA2E5;
+}
