@@ -57,8 +57,8 @@
 								<td class="sno"><?php echo "($i)";?></td>
 								<td class="name"><?php echo $row["name"];?></td>
 								<td class="qty"><?php echo $row["qty"]?></td>
-								<td class="spent"><?php echo $row["spentamt"]?></td>
-								<td class="price"><?php echo update(giveRank($row['name']))*$row['qty'];?></td>
+								<td class="spent"><?php echo round($row["spentamt"],5);?></td>
+								<td class="price"><?php echo round(update(giveRank($row['name'])),5)*round((float)$row['qty'],5);?></td>
 							</tr>
 							<?php $i++;?>
 						</table>

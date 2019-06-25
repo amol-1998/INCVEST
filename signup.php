@@ -86,7 +86,6 @@
 					}
 				}
 		} 
-			
 		//When passwords don't match
 		else
 		{

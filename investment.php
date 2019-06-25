@@ -142,16 +142,7 @@
 	<header>
 		<div class="container">
 				<div id="logo">
-					<img src="newlogo1.png">
-					<h1>
-						<span style="color:#21baf3;">I</span>
-						<span style="color:#ccc;">N</span>
-						<span style="color:#fcdf15;">C</span>
-						<span style="color:#d40e52;">V</span>
-						<span style="color:#2C3BF5;">E</span>
-						<span style="color:#3c3c3c;">S</span>
-						<span style="color:#7DEA0F;">T</span>
-					</h1>
+					<img src="logoname.png" alt="INCVEST.com">
 				</div>
 				<div id="account">
 					<img src='<?php echo $imgPath?>' id="profile">

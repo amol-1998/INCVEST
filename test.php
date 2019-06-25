@@ -6,15 +6,8 @@
 </head>     
 
 <body>
-<form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete">
-    <input id="bcoin" type="text" name="myCountry" placeholder="Country">
-  </div>
-</form>
-<p id="pap"></p>
-<form action="test.php" method="post">
-	<input type="text" name="pass">
-</form>
+<?php 
+?>
 <!--
 <script>
 
@@ -140,8 +133,7 @@ autocomplete(document.getElementById("bcoin"), arr);
 </body>
 </html>
 <?php
-	$pass = $_POST["pass"];
-	echo crypt("bantoo90");
 	$hash = password_hash("bantoo90", PASSWORD_DEFAULT);
-	echo password_verify("bantoo90", $hash);
+	echo $hash;
+	echo password_verify("$2y$10$AT6L1QqXD4PYgQCVkcEhB.I6aMd4mh2uLHTOyJr4bkFpcTDZfpR92", $hash);
 ?>

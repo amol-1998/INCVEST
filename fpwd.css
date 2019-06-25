@@ -1,0 +1,35 @@
+*{
+	margin:0;
+	padding:0;
+}
+div#fpbox{
+	width:60%;
+	margin-left:20%;
+	margin-top:100px;
+}
+div#fpbox h1{
+	font-size:60px;
+	font-family:lato;
+	text-align:center;
+	color:#121212;
+	margin-bottom:75px;
+	margin-top:50px;
+}
+div#fpbox form{
+	width:80%;
+	margin-left:10%;
+}
+div#fpbox form input[type=text]{
+	width:100%;
+	border:1px solid #777;
+	font-size:18px;
+	padding:15px 0 15px 10px;
+}
+div#fpbox form input[type=submit]{
+	width:40%;
+	margin-left:30%;
+	padding:18px 0 18px 0;
+	text-align:center;
+	display:inline-block;
+	margin-top:50px;
+}
